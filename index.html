@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags for SEO & Responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nextgen Labs helps students, content creators, and entrepreneurs build professional portfolios, digital products, and brand services.">
+  <meta name="keywords" content="Nextgen Labs, content creation, branding, digital products, portfolio, students, entrepreneurs">
+  <meta name="author" content="Nextgen Labs">
+
+  <!-- Title -->
+  <title>Nextgen Labs | Building & Helping CEOs of the Next Generation</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Optional: Animations library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<title>Nextgen Labs</title>
+<style>
+  body {margin:0; font-family: Arial, sans-serif; background-color:#111; color:#fff;}
+  h1,h2,h3 {margin:0;}
+
+  /* Header */
+  header {
+    display:flex; flex-direction:column; align-items:center;
+    padding:20px 40px; background:#000; border-bottom:2px solid #FFD700;
+  }
+  header .logo-container {
+    display:flex; align-items:center; gap:15px;
+  }
+  header .logo-container img {width:50px; height:auto;}
+  header .logo-container h1 {font-size:36px; margin:0; color:#FFD700;}
+  header p {color:#ccc; font-size:16px; margin-top:5px; text-align:center;}
+
+  /* Navigation */
+  .nav-menu {text-align:center; margin-top:15px;}
+  .nav-menu a {color:#FFD700; text-decoration:none; margin:0 15px; font-weight:bold; transition:0.3s;}
+  .nav-menu a:hover {color:#fff;}
+
+  section {padding:60px 40px;}
+  h2 {color:#FFD700; text-align:center; margin-bottom:30px;}
+  #about p {max-width:800px; margin:0 auto; line-height:1.6; color:#ddd; text-align:center;}
+
+  /* Services & Collabs Cards */
+  .services-grid, .collabs-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; max-width:1000px; margin:0 auto;}
+  .card {background:#1a1a1a; padding:20px; border-radius:10px; border:1px solid #333; cursor:pointer; transition:0.3s;}
+  .card h3 {color:#FFD700; margin-bottom:10px;}
+  .card p.short {color:#ccc; font-size:14px;}
+  .card p.long {display:none; margin-top:10px; color:#ddd; font-size:14px; line-height:1.5;}
+  .card.active p.long {display:block;}
+  .card:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(255,215,0,0.3);}
+  .card .icon {font-size:24px; margin-bottom:10px; display:block;}
+
+  /* Portfolio */
+  .portfolio-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; max-width:1000px; margin:0 auto;}
+  .portfolio-card {background:#1a1a1a; padding:15px; border-radius:12px; border:1px solid #333; text-align:center; transition:0.3s;}
+  .portfolio-card img {width:100%; height:auto; border-radius:8px; margin-bottom:10px;}
+  .portfolio-card h3 {color:#FFD700; margin-bottom:8px;}
+  .portfolio-card p {color:#ccc; font-size:14px;}
+
+  /* CTA */
+  #cta {background:#000; text-align:center; border-top:2px solid #FFD700;}
+  #cta form {max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px; padding:40px 20px;}
+  #cta input, #cta textarea {padding:12px; border-radius:8px; border:none; font-size:14px;}
+  #cta input[type="submit"] {background:#FFD700; color:#000; font-weight:bold; cursor:pointer; transition:0.3s;}
+  #cta input[type="submit"]:hover {background:#e6c200;}
+  #cta p {color:#ccc; margin-top:15px; font-size:14px;}
+
+  /* FAQ */
+  #faq {padding:60px 40px; max-width:900px; margin:0 auto;}
+  .faq-item {background:#1a1a1a; padding:20px; margin-bottom:15px; border-radius:10px; border:1px solid #333; cursor:pointer; transition:0.3s;}
+  .faq-item h3 {color:#FFD700; margin-bottom:10px;}
+  .faq-item p {color:#ccc; display:none; font-size:14px; line-height:1.5;}
+  .faq-item.active p {display:block;}
+
+  /* Footer */
+  footer {background:#111; text-align:center; padding:20px; color:#888; border-top:2px solid #FFD700;}
+  footer a {color:#FFD700; text-decoration:none;}
+  footer a:hover {text-decoration:underline;}
+
+  /* Animations */
+  .fade-in {opacity:0; transform:translateY(20px); transition:all 0.8s ease-out;}
+  .fade-in.visible {opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="images/nextgenlabs.png" alt="Nextgen Labs Logo">
+    <h1>Nextgen Labs</h1>
+  </div>
+  <p>Building and helping CEOs of the next generation</p>
+  <nav class="nav-menu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#collabs">Collabs</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#faq">FAQ</a>
+    <a href="#cta">Contact</a>
+  </nav>
+</header>
+
+<section id="about" class="fade-in">
+  <h2>About Nextgen Labs</h2>
+  <p>Nextgen Labs is a teen-focused creator agency helping young visionaries build brands, digital products, and content that stands out. From ghostwriting to digital design and community projects, we empower creators to execute their ideas and grow online.</p>
+</section>
+
+<section id="services" class="fade-in">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="card"><h3>Ghostwriting</h3><p class="short">Captions, blogs, articles, ebooks, and more.</p><p class="long">We provide professional ghostwriting for social media captions, full-length blogs, articles, ebooks, and other written content. Perfect for creators who want consistent content without spending hours writing.</p></div>
+    <div class="card"><h3>Flyer/Poster Design</h3><p class="short">Professional designs for marketing materials.</p><p class="long">Custom flyer and poster designs to make your brand stand out. We design eye-catching materials for events, promotions, and online marketing campaigns.</p></div>
+    <div class="card"><h3>Ebook Writing</h3><p class="short">Craft full ebooks from research to formatting.</p><p class="long">From research, writing, editing to formatting, we help you create complete ebooks that look professional and engage readers effectively.</p></div>
+    <div class="card"><h3>Branding</h3><p class="short">Complete branding packages including logos and identity.</p><p class="long">We help you develop a cohesive brand identity including logos, color palettes, typography, and brand messaging for a consistent and memorable brand.</p></div>
+    <div class="card"><h3>Virtual Event Planning</h3><p class="short">Plan and coordinate virtual events.</p><p class="long">We handle the entire process of planning and coordinating virtual events, ensuring a seamless experience for organizers and participants.</p></div>
+    <div class="card"><h3>Presentation Slide Design</h3><p class="short">Eye-catching slides for events and pitches.</p><p class="long">We design professional slides that communicate your ideas clearly and impress your audience during presentations and pitches.</p></div>
+        <div class="card"><h3>Digital Products & Digitization</h3><p class="short">Turn ideas into digital products and digitize materials.</p><p class="long">From templates and guides to digital tools, we help you create and digitize products that reach your audience effectively online.</p></div>
+    <div class="card"><h3>Nextgen Community Projects</h3><p class="short">Connecting learners to earners.</p><p class="long">We connect learners to earners through skill-building projects and opportunities to showcase their work while earning experience and rewards.</p></div>
+  </div>
+</section>
+
+<section id="collabs" class="fade-in">
+  <h2>Collabs</h2>
+  <div class="collabs-grid">
+    <div class="card">
+      <span class="icon">👤</span>
+      <h3>Personal Client Collaboration</h3>
+      <p class="short">Long-term collaborations tailored to individual needs.</p>
+      <p class="long">
+        Examples include:<br>
+        - Digitalizing school notes, PDFs, or study materials for a semester/term<br>
+        - Brainstorming content ideas for a month<br>
+        - Personalized coaching or guidance<br>
+        <strong>Contract:</strong> Usually involves a contract for the agreed period.
+      </p>
+    </div>
+    <div class="card">
+      <span class="icon">🏢</span>
+      <h3>Organizational Collaboration</h3>
+      <p class="short">Working directly with companies, schools, or institutions.</p>
+      <p class="long">
+        Examples include:<br>
+        - Branding, content, and digital solutions for the company<br>
+        - Virtual events or campaigns<br>
+        - Project-based work for multiple employees or departments<br>
+        <strong>Contract:</strong> Typically requires a formal contract.
+      </p>
+    </div>
+    <div class="card">
+      <span class="icon">💰</span>
+      <h3>One-Time / Paid Collaboration</h3>
+      <p class="short">Quick, one-off projects for individuals or organizations.</p>
+      <p class="long">
+        Examples include:<br>
+        - Hosting or writing a book<br>
+        - Short-term projects or consultations<br>
+        <strong>Contract:</strong> Optional, depending on the service.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="fade-in">
+  <h2>Our Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="portfolio-card"><img src="images/ebook.png" alt="Ebook"><h3>Ebook Design</h3><p>A sleek, professional ebook layout for creators.</p></div>
+    <div class="portfolio-card"><img src="images/fairy.png" alt="Flyer Poster"><h3>Flyer/Poster</h3><p>Marketing materials designed to grab attention.</p></div>
+    <div class="portfolio-card"><img src="images/presentation.jpeg" alt="Presentation Slides"><h3>Presentation Slides</h3><p>Clean and professional slide designs.</p></div>
+    <div class="portfolio-card"><img src="images/digital.jpeg" alt="Digital Products"><h3>Digital Products</h3><p>Digitized products ready for online distribution.</p></div>
+  </div>
+</section>
+ <section id="testimonials" class="fade-in">
+  <h2>What Clients Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <p>"Nextgen Labs helped me digitalize my school notes for the entire semester. Super organized and easy to follow!"</p>
+      <h4>- Aisha, Student</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"The ebook they ghostwrote for my side hustle boosted my online sales! Truly next-level service."</p>
+      <h4>- Tunde, Entrepreneur</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Loved working with Nextgen Labs on our company content. Professional, creative, and fast."</p>
+      <h4>- Funke, Small Business Owner</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"They designed our flyers and presentations beautifully. My audience engagement increased immediately."</p>
+      <h4>- Michael, Content Creator</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"A friend recommended Nextgen Labs, and I’m so glad I trusted them. The collaboration process was smooth and fun."</p>
+      <h4>- Sade, Student & Creator</h4>
+    </div>
+     <div class="testimonial-card">
+  <p>"Nextgen Labs designed my portfolio website and it completely elevated my brand. Pitching to brands has never been easier—I finally look professional online!"</p>
+  <h4>- Chinedu, Content Creator</h4>
+</div>
+
+  </div>
+</section>
+
+<style>
+  #testimonials {padding:60px 20px; max-width:1000px; margin:0 auto; text-align:center;}
+  #testimonials h2 {color:#FFD700; margin-bottom:40px;}
+  .testimonial-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+  .testimonial-card {background:#1a1a1a; padding:25px; border-radius:10px; border:1px solid #333; color:#ccc; transition:0.3s;}
+  .testimonial-card h4 {color:#FFD700; margin-top:15px; font-weight:500;}
+  .testimonial-card:hover {background:#222; transform:translateY(-5px);}
+</style>
+
+<section id="faq" class="fade-in">
+  <h2>FAQ</h2>
+  
+  <div class="faq-item">
+    <h3>How are services offered?</h3>
+    <p>Clients can send a message through the contact form to discuss their needs and schedule the service.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Who do we work with?</h3>
+    <p>Companies, small businesses, content creators, students, and entrepreneurs.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How long do collaborations last?</h3>
+    <p>Depends on the type of collaboration. Personal client and organizational contracts typically have a set duration, while paid/one-time collaborations are project-based.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Can I customize my service package?</h3>
+    <p>Yes! Services and collabs can be tailored to your specific needs. Simply reach out via the contact form.</p>
+  </div>
+</section>
+
+<style>
+  /* FAQ Styling */
+  #faq {padding:60px 40px; max-width:900px; margin:0 auto;}
+  .faq-item {background:#1a1a1a; padding:20px; margin-bottom:15px; border-radius:10px; border:1px solid #333; cursor:pointer; transition:0.3s;}
+  .faq-item h3 {color:#FFD700; margin-bottom:10px;}
+  .faq-item p {color:#ccc; font-size:14px; line-height:1.5; display:none;}
+  .faq-item.active p {display:block;}
+</style>
+
+<script>
+  // Ensure script runs after DOM is loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active'); // toggle active class
+      });
+    });
+  });
+</script>
+
+<style>
+  /* FAQ Styling */
+  #faq {padding:60px 40px; max-width:900px; margin:0 auto;}
+  .faq-item {background:#1a1a1a; padding:20px; margin-bottom:15px; border-radius:10px; border:1px solid #333; cursor:pointer; transition:0.3s;}
+  .faq-item h3 {color:#FFD700; margin-bottom:10px;}
+  .faq-item p {color:#ccc; display:none; font-size:14px; line-height:1.5;}
+  .faq-item.active p {display:block;}
+</style>
+
+<script>
+  // Toggle FAQ answers
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => { item.classList.toggle('active'); });
+  });
+</script>
+
+<section id="subscribe" class="fade-in">
+  <h2>Subscribe for Updates</h2>
+  <p>Get the latest tips, guides, and updates from Nextgen Labs straight to your inbox!</p>
+  <form action="https://formspree.io/f/mwpnwbql" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required>
+    <input type="submit" value="Subscribe">
+  </form>
+</section>
+
+<style>
+  #subscribe {background:#111; color:#fff; text-align:center; padding:50px 20px; border-top:2px solid #FFD700; max-width:600px; margin:0 auto;}
+  #subscribe h2 {color:#FFD700; margin-bottom:10px;}
+  #subscribe p {color:#ccc; margin-bottom:20px;}
+  #subscribe input[type="email"] {padding:12px; border-radius:8px; border:none; width:60%; max-width:300px; margin-bottom:10px;}
+  #subscribe input[type="submit"] {padding:12px 20px; border:none; border-radius:8px; background:#FFD700; color:#000; font-weight:bold; cursor:pointer; transition:0.3s;}
+  #subscribe input[type="submit"]:hover {background:#e6c200;}
+</style>
+
+<section id="cta" class="fade-in">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/YOURFORMID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
+    <input type="submit" value="Send Message">
+  </form>
+  <p>Email: bellosini@icloud.com | Phone: +234 91 2571 6579</p>
+</section>
+
+<footer>
+  <p>Follow us on: 
+    <a href="https://www.tiktok.com/@next.gen.labs" target="_blank">TikTok</a> | 
+    <a href="https://www.instagram.com/nextgenlabs001" target="_blank">Instagram</a>
+  </p>
+  <p>Email: bellosini@icloud.com | Phone: +234 91 2571 6579</p>
+  <p>&copy; 2025 Nextgen Labs. All rights reserved.</p>
+</footer>
+
+<script>
+  // Toggle long descriptions
+  document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => { card.classList.toggle('active'); });
+  });
+
+  // Toggle FAQ answers
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => { item.classList.toggle('active'); });
+  });
+
+  // Fade-in scroll animation
+  const faders = document.querySelectorAll('.fade-in');
+  const appearOptions = { threshold: 0.1 };
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+
+
+</script>
+
+</body>
+</html>
